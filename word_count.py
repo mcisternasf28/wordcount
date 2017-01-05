@@ -1,9 +1,16 @@
-happy = input("Enter a phrase to word count: ")
-words = happy.split()
+def wordcount(happy):
 
-counts = {}
-for word in words:
-    counts[word] = counts.get(word, 0) + 1
+	words = happy.split()
 
-print("The word frecuency of your phrase is: ")
-print(counts)
+	counts = {}
+	for word in words:
+		counts[word] = counts.get(word, 0) + 1
+	
+	
+	print("The word frecuency of your phrase is: ")
+	print(counts)
+
+def main():
+	
+	happy = input("Enter a phrase to word count: ")
+	wordcount(happy)
