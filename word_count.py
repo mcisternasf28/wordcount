@@ -14,3 +14,5 @@ def main():
 	
 	happy = input("Enter a phrase to word count: ")
 	wordcount(happy)
+
+main()
